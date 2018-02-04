@@ -1,0 +1,26 @@
+<div id="footer">
+                <div id="footerCopyrightContainer">
+                    <a id="footerCopyright" href="#">Copyright info</a>
+                </div>
+                <div id="footerLinksContainer">
+                    <div id="footerContactsContainer">
+                        <a id="footerContacts" href="#">Contact Us</a>
+                    </div>
+                    <div id="footerDirectionsContainer">
+                        <a id="footerDirections" href="#">Directions</a>
+                    </div>
+                    <div id="footerFacebookContainer">
+                        <a id="footerFacebook" href="#">
+                            <img id="footerFacebookImg" src="${root}/${initParam.imagePath}facebook.gif">
+                        </a>
+                    </div>
+                    <div id="footerTwitterContainer">
+                        <a id="footerTwitter" href="#">
+                            <img id="footerTwitterImg" src="${root}/${initParam.imagePath}twitter.gif">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

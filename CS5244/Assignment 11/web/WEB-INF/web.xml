@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <context-param>
+        <description>The relative path to the folder containing book images</description>
+        <param-name>bookImagePath</param-name>
+        <param-value>images-books/</param-value>
+    </context-param>
+    <context-param>
+        <description>The relative path to the folder of general images</description>
+        <param-name>imagePath</param-name>
+        <param-value>images/</param-value>
+    </context-param>
+    <context-param>
+        <description>The fixed shipping cost</description>
+        <param-name>shippingCost</param-name>
+        <param-value>5.00</param-value>
+    </context-param>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+    <welcome-file-list>
+        <welcome-file>index</welcome-file>
+    </welcome-file-list>
+    <jsp-config>
+        <jsp-property-group>
+            <description>headers and footers</description>
+            <url-pattern>/WEB-INF/view/*</url-pattern>
+            <include-prelude>/WEB-INF/jspf/header.jspf</include-prelude>
+            <include-coda>/WEB-INF/jspf/footer.jspf</include-coda>
+        </jsp-property-group>
+        <jsp-property-group>
+            <description>JSP configuration for the admin console</description>
+            <url-pattern>/admin/*</url-pattern>
+            <include-prelude>/admin/jspf/header.jspf</include-prelude>
+            <include-coda>/admin/jspf/footer.jspf</include-coda>
+        </jsp-property-group>
+    </jsp-config>
+    <security-role>
+        <description/>
+        <role-name>administrator</role-name>
+    </security-role>
+    <login-config>
+        <auth-method>FORM</auth-method>
+        <realm-name>file</realm-name>
+        <form-login-config>
+            <form-login-page>/admin/login.jsp</form-login-page>
+            <form-error-page>/admin/error.jsp</form-error-page>
+        </form-login-config>
+    </login-config>
+    <security-constraint>
+        <display-name>Admin</display-name>
+        <web-resource-collection>
+            <web-resource-name>Administration</web-resource-name>
+            <description/>
+            <url-pattern>/admin/*</url-pattern>
+        </web-resource-collection>
+        <auth-constraint>
+            <description/>
+            <role-name>administrator</role-name>
+        </auth-constraint>
+        <user-data-constraint>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+    <security-constraint>
+        <display-name>Checkout</display-name>
+        <web-resource-collection>
+            <web-resource-name>Checkout</web-resource-name>
+            <url-pattern>/checkout</url-pattern>
+            <http-method>GET</http-method>
+        </web-resource-collection>
+        <user-data-constraint>
+            <description/>
+            <transport-guarantee>CONFIDENTIAL</transport-guarantee>
+        </user-data-constraint>
+    </security-constraint>
+</web-app>

@@ -1,0 +1,598 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 800px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+#main{
+    background: #dacafb;
+    height: 100%;
+    width: 800px;
+    float: left;
+}
+
+/*
+* Header styles
+*/
+
+#header{
+    height: 150px;
+    background: #e692f8;
+    float: left;
+    width: 800px;
+}
+
+#headerLogoImage{
+    margin-top: 10px;
+    margin-left: 5px;
+    float: left;
+}
+
+#headerLogin{
+    float: right;
+    width: 86px;
+}
+
+#headerGoToCart{
+    float: right;
+    width: 86px;
+}
+
+#headerCartImage{
+    float: left;
+}
+
+#headerCartNumbers{
+    float: right;
+}
+
+#headerCartContainer{
+    float:right;
+    padding-top: 5px;
+}
+
+#headerLoginContainer{
+}
+
+#headerGoToCartContainer{
+
+}
+
+#headerLogoText{
+    padding-top: 75px;
+    font-family: Georgia, Times, serif;
+    font-weight: bold;
+    float:left;
+}
+
+#headerCategories{
+    padding-top: 75px;
+    padding-left: 100px;
+    height: 150px;
+    float: left;
+}
+
+#headerButtonContainer{
+    margin-top: 75px;
+    margin-right: 0px;
+    padding-right: 5px;
+    float:right;
+}
+
+/*
+* Footer styles
+*/
+
+#footer{
+    height: 60px;
+    background: #e692f8;
+    float: left;
+    width: 800px;
+}
+
+#footerCopyrightContainer{
+    float:left;
+}
+
+#footerCopyright{
+    float:left;
+    padding-top: 37px;
+    padding-left: 5px;
+}
+
+#footerLinksContainer{
+    float:right;
+}
+
+#footerContactsContainer{
+    float:left;
+}
+
+#footerContacts{
+    float:left;
+    padding-top: 37px;
+    padding-right: 5px;
+}
+
+
+
+#footerDirectionsContainer{
+    float:left;
+}
+
+#footerDirections{
+    float:left;
+    padding-top: 37px;
+    padding-right: 5px;
+}
+
+#footerFacebookContainer{
+    float:left;
+}
+
+#footerFacebookImg{
+    float: left;
+    padding: 5px;
+    height: 50px;
+    width: auto;
+}
+
+#footerTwitterContainer{
+    float:left;
+}
+
+#footerTwitterImg{
+    float: left;
+    padding: 5px;
+    height: 50px;
+    width: auto;
+}
+
+/*
+* Welcome Page styles
+*/
+
+.body-content-container{
+    float: left;
+    position: relative;
+    height: 390px
+}
+
+.body-top-container{
+    width: 798px;
+    height: 68px;
+    float: left;
+    border-bottom: 1px solid black;
+}
+
+#welcomeMessageText{
+}
+
+.body-column-container{
+    width: 798px;
+    height: 100%;
+    float: left;
+}
+
+.body-left-column-container{
+    float: left;
+    height: 100%;
+    width: 248px;
+}
+
+.body-right-column-container{    
+    height: 100%;
+}
+
+.body-right-column-grid-container {
+    float: left;
+    width: 100%;
+    
+}
+.body-right-column-header-container {
+    float: left;
+    width:  100%;
+    height: 60px;
+}
+
+.body-left-column-link-list{
+    text-align: left;
+    list-style-type: none;
+}
+
+.active{
+    color: #4dd7fa;
+}
+
+/*
+* Products
+*/
+
+.productContainer{
+    display: inline-block;
+    padding-bottom: 25px;
+    padding-left: 10px;
+    height: 100%;
+}
+
+.productContainer-image{
+    height: 80%;    
+}
+
+.productContainer-nameLink{
+    height: 20%;
+    padding-top: 5px;
+}
+
+.truncatedLink{
+  white-space: nowrap;
+  width:160px; 
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display:block;
+}
+
+.truncatedLink:hover{
+    overflow: visible; 
+    white-space: normal;
+    height:auto; 
+}
+
+/*
+* Products table TODO remove most of this
+*/
+
+#productsTable{
+    border: 1px solid black;
+    background: white;
+}
+
+#productsTable td{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#productsTable td:last-child{
+    border-right: none;
+    border-bottom: 1px solid black;
+}
+
+#productsTable tr:last-child td{
+    border-right: 1px solid black;
+    border-bottom: none;
+}
+
+#productsTable tr:last-child td:last-child{
+    border-right: none;
+    border-bottom: none;
+}
+
+#productsTable th{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+#productsTable th:last-child{
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.thumbnail{
+    height: 80px;
+    width: auto;
+}
+
+.thumbnail-container{
+    float: left;
+}
+/*
+* Categories page
+*/
+
+.category-button{
+    width: 100px;
+}
+
+.category-button-selected{
+    width: 100px;
+    border-color: blue;
+    border-radius: 10%;
+}
+
+.category-column-container{
+    width: 800px;
+    height: 100%;
+    float: left;
+}
+
+.category-left-column-container{
+    float: left;
+    height: 100%;
+    width: 199px;
+    border-right: black solid 1px;
+}
+
+.category-right-column-container{    
+    float: left;
+    height: 100%;
+    width: 600px;
+}
+
+.category-right-column-grid-container {
+    float: left;
+    width: 100%;
+    height: 330px;
+}
+
+.bookContainer{
+    float: left;
+    height: 40%;
+    width: 40%;
+    padding: 10px;
+    margin-left: 20px;
+}
+
+.read-now-button-container{
+    float: left;
+    width: 120px;
+    height: 86px;
+    margin-left: -1px;
+}
+
+.read-now-button{
+    margin-left: -27px;
+    width: 93px;
+}
+
+.addToCartButton{
+    margin-left: -27px;
+    width: 93px;
+}
+
+.clear-left{
+    clear:left;
+}
+
+/*
+* Individual product
+*/
+
+#productBody img {
+    width: 100px;
+}
+
+#productAddReviewStarsImg{
+    margin-bottom: -15px;
+}
+
+/*
+* Cart page
+*/
+#cartTable{
+    background: white;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    width: 540px;
+    border-collapse: collapse;
+}
+
+#checkoutButton{
+    text-decoration: none;
+}
+
+#continueShoppingButton{
+    text-decoration: none;
+}
+
+#incrementButton{
+    width: 22px;
+}
+
+#decrementButton{
+    width: 22px;
+    margin-bottom: 3px;
+}
+
+.quantityImageCells{
+    height: 28.5px;
+    width: 50px;
+}
+
+.cartForms{
+    width: 50px;
+}
+
+#cart-container{
+    width: 798px;
+    max-height: 320px;
+    float: left;
+    overflow: auto;
+}
+
+/*
+* Checkout
+*/
+
+#paymentContentsContainer{
+    float: left;
+    height: 321px;
+    width: 100%;
+}
+
+#paymentContainer{
+    float: left;
+    width: 48%;
+    height: 98%;
+    padding: 1%;
+}
+
+#summaryContainer{
+   float: left;
+   width: 48%;
+   height: 98%;
+   padding: 1%;
+}
+
+#purchaseForm{
+    float: right;
+    border: 1px solid black;
+    background: greenyellow;
+    min-height: 210px;
+    max-height: 300px;
+    width: 319px;
+    padding: 5px;
+    overflow: auto;
+}
+
+#leftPaymentDiv{
+    float: left;
+    width: 100px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+#leftPaymentDiv > div{
+    height: 23px;
+    padding-top:3px;
+    padding-bottom:3px;
+}
+
+#rightPaymentDiv{
+    float: left;
+    width: 164px;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+
+#rightPaymentDiv > div{
+    padding-top:3px;
+    padding-bottom:3px;
+}
+
+#purchaseSubmitDiv{
+   
+}
+
+#summaryDiv{
+    border: 1px solid black;
+    background: greenyellow;
+    height: 149px;
+    width: 300px;
+}
+
+#summaryDiv > div{
+    margin-top: 59px;
+}
+
+/*
+* Confirmation
+*/
+
+#orderSummaryTable{
+    background: white;
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 540px;
+    border-collapse: collapse;
+}
+
+#orderSummaryTableContainer{
+    float:left;
+    width:100%;
+    overflow:auto;
+    max-height: 92%;
+}
+
+#orderCustomerInfoContainer{
+    float:left;
+}
+
+#confirmationText{
+    float:left;
+    width:100%;
+    height: 8%;
+}
+
+#orderCustomerInfoTable{
+    
+}
+
+/*
+* Misc.
+*/
+
+.underConstructionDiv{
+    height:390px;
+    width:800px;
+    float:left
+}
+
+.lightBlue{
+    background: aquamarine;
+}
+
+.white{
+    background:white;
+}
+
+.rightAlign{
+    text-align: right;
+}
+
+/* admin styles */
+#adminLogo {
+    float:left;
+    margin-left: 30px;
+    margin-top: -20px;
+}
+
+#loginBox {
+    width: 300px;
+    margin: 0 auto;
+    border: solid 1px #f5eabe;
+    background-color: #f5eabe;
+    border-radius: 4px;
+}
+
+#adminMenu {
+    float: left;
+    width: 180px;
+    margin: 25px 5px 0 30px;
+    border: solid 1px #f5eabe;
+    background-color: #f5eabe;
+    border-radius: 4px;
+}
+
+#adminMenu p { margin-left: 15px }
+
+#adminTable {
+    width: 580px;
+    float: left;
+    background-color: #edf8f7;
+}
+
+.adminContainer {
+    width: 800px;
+    height: 390px;
+    float: left;
+}
+
+.alignLeft { text-align: left }
+
+.selectedRow {
+    background-color: #c3e3e0;
+    cursor: pointer;
+}
+
+.noDecoration { text-decoration: none }
+
+.rigidWidth { width:200px }
+
+.embedded {
+    margin: 0;
+    border: none;
+}
+
